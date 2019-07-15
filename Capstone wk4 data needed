@@ -1,8 +1,15 @@
 From the specific question to make cluster of current branch of After You Company
 
-There are available data of all current branch (74 branches) that you can find via https://www.afteryoudessertcafe.com/en/branches/. Therefore, it is needed to scrape data from this page to get 'Branch Name', Location ('Latitude' and 'Longitude') of each branch. The data can be scraping by using beautifulsoup. However, it is not all in format of table so it is needed to use regular expression to extract out some unused word. The data is collected in form of table by using Panda. After getting all branches name and location, they will be put into Foursqure to find nearby place (assuming that nearby place = less than 200 meter far away from each branch) and track the type of location that nearby each branch.
+There are available data of all current branch (74 branches) that you can find via https://www.afteryoudessertcafe.com/en/branches/.
+Therefore, it is needed to scrape data from this page to get 'Branch Name', Location ('Latitude' and 'Longitude') of each branch.
+The data can be scraping by using beautifulsoup. 
+However, it is not all in format of table so it is needed to use regular expression to extract out some unused word. 
+The data is collected in form of table by using Panda. After getting all branches name and location, 
+they will be put into Foursqure to find nearby place (assuming that nearby place = less than 200 meter far away from each branch) 
+and track the type of location that nearby each branch.
 
-Then, summarizing and analysis the type of location in each branch and quantify by percentage of each type in each branch. Then, cluster each branch depend on location nearby each branch.
+Then, summarizing and analysis the type of location in each branch and quantify by percentage of each type in each branch. 
+Then, cluster each branch depend on location nearby each branch.
 
 After that, showing on the map by folium to provide the specific location of each branch with differnt color to show each cluster.
 
